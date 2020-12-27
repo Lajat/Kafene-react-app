@@ -61,9 +61,9 @@ class Products extends React.Component {
         this.state.activeFilter.length === 0
     ) {
       filteredList = this.state.searchLists;
-    } else if(this.state.activeFilter=="LowStock"){
+    } else if(this.state.activeFilter==="LowStock"){
       filteredList = this.state.searchLists.filter(item =>item.stock < 100);
-    }else if(this.state.activeFilter=="Expired"){
+    }else if(this.state.activeFilter==="Expired"){
         filteredList = this.state.searchLists.filter(item =>Date.parse(item.expiryDate) < d);
     }else if(this.state.activeFilter.length>1){
         filteredList = this.state.searchLists.filter(item =>Date.parse(item.expiryDate) < d && item.stock < 100);

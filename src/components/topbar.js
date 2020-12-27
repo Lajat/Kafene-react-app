@@ -68,7 +68,7 @@ class Topbar extends React.Component {
                         <p class="topbar-Brandname">Kafene</p>
                     </div>
                         {
-                            this.props.loginStatus == false ? 
+                            (this.props.loginStatus === false || this.props.loginStatus === "false") ? 
                             <nav>
                                 <div style={{color: this.state.orderColor, borderBottom: this.state.orderBorderBottom, cursor:"not-allowed"}} id="ordersPage" class="topbar-menuItem" href="orders.html">Orders</div>
                                 <div style={{color: this.state.productColor, borderBottom: this.state.productBorderBottom, cursor:"not-allowed"}} id="productsPage" class="topbar-menuItem" href="products.html">Products</div>

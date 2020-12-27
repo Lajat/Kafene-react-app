@@ -15,7 +15,6 @@ class OrderDetails extends React.Component {
     }
 
     componentDidMount(){
-        let arr= [];
         axios.get(`https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders/${this.props.data}`)
       .then( (response)=> {
               this.setState({

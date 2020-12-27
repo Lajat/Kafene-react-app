@@ -51,7 +51,7 @@ class Login extends React.Component {
         let username = this.state.username;
         let password = this.state.password;
 
-        if(username == password && (username !== "" || password !== "")) {
+        if(username === password && (username !== "" || password !== "")) {
             console.log("same");
             
             this.setState({route:"/orders"});
@@ -101,12 +101,12 @@ class Login extends React.Component {
                                     </div>
                                     <input onChange={this.onPasswordChange} type="password" id="password" class="form-control" name="password" placeholder="password" />
                                 </div>
-                                <div style={{alignItems:"center!important", display: "flex", flexWrap:"wrap", marginRight:"-15px", marginLeft:"0px", color:"white", alignItems:"center"}}>
+                                <div style={{alignItems:"center!important", display: "flex", flexWrap:"wrap", marginRight:"-15px", marginLeft:"0px", color:"white"}}>
                                     <input style={{boxSizing:"border-box", padding:"0", width: "20px", height:"20px", marginLeft:"15px", marginRight:"5px", overflow: "visible", margin: "0"}} type="checkbox" />
                                     <div style={{marginLeft:"10px"}}>Remember Me</div>
                                 </div>
                                 <div onClick={this.onButtonClicked} class="form-group">
-                                    <Link to={this.state.route}><input type="submit" id="submit" value="submit" value="Login" class="btn" /></Link>
+                                    <Link to={this.state.route}><input type="submit" id="submit" value="submit" class="btn" /></Link>
                                 </div>
                             </form>
                         </div>
