@@ -83,7 +83,7 @@ class Topbar extends React.Component {
                         }
                     </div>
                     {
-                        (this.props.loginStatus == true || this.props.loginStatus == "true") ? <Link to="login" onClick={this.onlogoutClicked} class="topbar-menuItem" href="index.html">Logout</Link> : null
+                        (this.props.loginStatus === true || this.props.loginStatus === "true") ? <Link to="login" onClick={this.onlogoutClicked} class="topbar-menuItem" href="index.html">Logout</Link> : null
                     }
             </div>
         );

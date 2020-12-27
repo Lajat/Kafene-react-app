@@ -53,7 +53,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
       {
-        (this.state.loginStatus == false || this.state.loginStatus == "false" || this.state.loginStatus == null || this.state.loginStatus == undefined) ? <Redirect to="/login" /> : <Redirect to="/orders" />
+        (this.state.loginStatus === false || this.state.loginStatus === "false" || this.state.loginStatus === null || this.state.loginStatus === undefined) ? <Redirect to="/login" /> : <Redirect to="/orders" />
       }
         <div>
           {/* {

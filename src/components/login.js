@@ -18,10 +18,10 @@ class Login extends React.Component {
         e.preventDefault();
         let username = e.target.username.value;
         let password = e.target.password.value;
-        if(username == null || username == null) {
+        if(username === null || username === null) {
             username = "";
         }
-        if(password == null || password == null) {
+        if(password === null || password === null) {
             password = "";
         }
         console.log(username);
